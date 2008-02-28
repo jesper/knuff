@@ -1,1 +1,5 @@
+Contributors:
+Petref Saraci
+Jesper Thomschutz
+
 Must be using a relatively new version of Qt (4.3 tested). qmake && make && ./knuff should get you up and running.
