@@ -1,1 +1,4 @@
+Copyright Jesper Thomschutz 2008.
+Licensed under GPLv3
+
 Must be using a relatively new version of Qt (4.3 tested). qmake && make && ./knuff should get you up and running.
