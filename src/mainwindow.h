@@ -5,14 +5,21 @@
 
 #include "gameview.h"
 #include "ui_mainwindow.h"
+#include "managePlayersDialog.h"
 
 class MainWindow : public QMainWindow
 {
-  public:
-    MainWindow(QWidget *parent = 0);
-  private:
-    Ui::MainWindow ui;
-    GameView *view;
+    Q_OBJECT
+
+    public:
+        MainWindow(QWidget *parent = 0);
+
+    private slots:
+        void showManagePlayersDialog();
+
+    private:
+        Ui::MainWindow ui;
+        GameView *view;
 };
 
 #endif

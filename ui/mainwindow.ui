@@ -13,6 +13,14 @@
    <string>Knuff</string>
   </property>
   <widget class="QWidget" name="centralwidget" >
+   <property name="geometry" >
+    <rect>
+     <x>0</x>
+     <y>29</y>
+     <width>446</width>
+     <height>462</height>
+    </rect>
+   </property>
    <layout class="QGridLayout" />
   </widget>
   <widget class="QMenuBar" name="menubar" >
@@ -29,13 +37,28 @@
      <string>Game</string>
     </property>
     <addaction name="actionNew" />
+    <addaction name="managePlayersAction" />
    </widget>
    <addaction name="menuGame" />
   </widget>
-  <widget class="QStatusBar" name="statusbar" />
+  <widget class="QStatusBar" name="statusbar" >
+   <property name="geometry" >
+    <rect>
+     <x>0</x>
+     <y>491</y>
+     <width>446</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
   <action name="actionNew" >
    <property name="text" >
     <string>&amp;New</string>
+   </property>
+  </action>
+  <action name="managePlayersAction" >
+   <property name="text" >
+    <string>Players</string>
    </property>
   </action>
  </widget>
