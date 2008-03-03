@@ -14,10 +14,10 @@ class GameView : public QGraphicsView
 
   public:
     GameView(QWidget *parent = 0);
-    
+
   public slots:
     void newGame();
-  
+
   private:
     void keyPressEvent(QKeyEvent *event);
     void keyReleaseEvent(QKeyEvent *event);

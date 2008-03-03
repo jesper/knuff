@@ -1,5 +1,7 @@
 #include "mainwindow.h"
 #include <QGraphicsScene>
+#include "gameview.h"
+#include "editPlayersDialog.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -10,4 +12,11 @@ MainWindow::MainWindow(QWidget *parent)
   setCentralWidget(view);
 
   connect(ui.actionNew, SIGNAL(triggered()), view, SLOT(newGame()));
+  connect(ui.editPlayersAction, SIGNAL(triggered()), this, SLOT(showEditPlayersDialog()));
+}
+
+void MainWindow::showEditPlayersDialog()
+{
+    EditPlayersDialog dlg;
+    dlg.exec();
 }
