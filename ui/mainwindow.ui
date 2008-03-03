@@ -37,7 +37,7 @@
      <string>Game</string>
     </property>
     <addaction name="actionNew" />
-    <addaction name="managePlayersAction" />
+    <addaction name="editPlayersAction" />
    </widget>
    <addaction name="menuGame" />
   </widget>
@@ -56,7 +56,7 @@
     <string>&amp;New</string>
    </property>
   </action>
-  <action name="managePlayersAction" >
+  <action name="editPlayersAction" >
    <property name="text" >
     <string>Players</string>
    </property>

@@ -2,10 +2,8 @@
 #define __MAINWINDOW_H__
 
 #include <QMainWindow>
-
-#include "gameview.h"
 #include "ui_mainwindow.h"
-#include "managePlayersDialog.h"
+class GameView;
 
 class MainWindow : public QMainWindow
 {
@@ -15,7 +13,7 @@ class MainWindow : public QMainWindow
         MainWindow(QWidget *parent = 0);
 
     private slots:
-        void showManagePlayersDialog();
+        void showEditPlayersDialog();
 
     private:
         Ui::MainWindow ui;
